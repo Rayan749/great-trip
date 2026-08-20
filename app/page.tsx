@@ -4,6 +4,7 @@ import { useState } from "react";
 import dynamic from "next/dynamic";
 import { SAMPLE_TRIP } from "@/lib/sample-trip";
 import { RAINY_TRIP } from "@/lib/rainy-trip";
+import { RELAX_TRIP } from "@/lib/relax-trip";
 import Itinerary from "@/components/Itinerary";
 
 // 地图必须客户端渲染（高德 API 依赖 window）
@@ -14,11 +15,11 @@ export default function Home() {
   const [selectedDay, setSelectedDay] = useState(1);
   const [openDay, setOpenDay] = useState<number | null>(0); // 行程单展开的天（0起索引），与地图联动
   const [panelOpen, setPanelOpen] = useState(true);
-  const [planMode, setPlanMode] = useState<"sunny" | "rainy">("sunny");
-  const trip = planMode === "sunny" ? SAMPLE_TRIP : RAINY_TRIP;
+  const [planMode, setPlanMode] = useState<"sunny" | "rainy" | "relax">("sunny");
+  const trip = planMode === "sunny" ? SAMPLE_TRIP : planMode === "rainy" ? RAINY_TRIP : RELAX_TRIP;
 
-  /** 切换晴/雨方案：重置天与高亮 */
-  const handlePlanMode = (m: "sunny" | "rainy") => {
+  /** 切换 晴/雨/慢游 方案：重置天与高亮 */
+  const handlePlanMode = (m: "sunny" | "rainy" | "relax") => {
     setPlanMode(m);
     setSelectedDay(1);
     setOpenDay(0);
@@ -83,6 +84,16 @@ export default function Home() {
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M17.5 19a4.5 4.5 0 0 0 0-9 6 6 0 0 0-11.3 1.9A4 4 0 0 0 7 19h10.5z" />
             <path d="M9 19l-1 2M13 19l-1 2M17 19l-1 2" />
+          </svg>
+        </button>
+        <button
+          onClick={() => handlePlanMode("relax")}
+          title="慢游方案"
+          className={`w-9 h-9 flex items-center justify-center transition-colors border-t border-slate-100 ${planMode === "relax" ? "bg-blue-600 text-white" : "text-slate-500 hover:bg-slate-50"}`}
+        >
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M10.5 8.5a4.5 4.5 0 0 1 7.6 2.2A3.5 3.5 0 0 1 17 18H7a4 4 0 0 1-1-7.9" />
+            <path d="M12 3v2M5.6 5.6l1.4 1.4" />
           </svg>
         </button>
       </div>
