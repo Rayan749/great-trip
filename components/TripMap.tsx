@@ -25,6 +25,7 @@ export default function TripMap({ trip, activeId, selectedDay, onMarkerClick, on
   const mapRef = useRef<any>(null);
   const markersRef = useRef<Map<string, any>>(new Map());
   const linesRef = useRef<any[]>([]);
+  const hotelMarkerRef = useRef<any>(null);
   const renderToken = useRef(0);
   const [status, setStatus] = useState<Status>("loading");
   const [error, setError] = useState("");
@@ -99,6 +100,10 @@ export default function TripMap({ trip, activeId, selectedDay, onMarkerClick, on
     markersRef.current.clear();
     linesRef.current.forEach((l) => map.remove(l));
     linesRef.current = [];
+    if (hotelMarkerRef.current) {
+      map.remove(hotelMarkerRef.current);
+      hotelMarkerRef.current = null;
+    }
 
     const daySegments = mapSegments(trip).filter((seg) => seg.length && seg[0].day.day === selectedDay);
     const markers: any[] = [];
@@ -151,6 +156,26 @@ export default function TripMap({ trip, activeId, selectedDay, onMarkerClick, on
         });
       }
     }
+    // 当天住宿：黄色五角星独立标记（不进入路线连线）
+    const curDay = trip.days.find((d) => d.day === selectedDay);
+    if (curDay && typeof curDay.hotelLat === "number" && typeof curDay.hotelLng === "number") {
+      const starSvg = `<svg width="26" height="26" viewBox="0 0 24 24" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.35))"><path d="M12 2l2.9 6.3 6.9.6-5.2 4.6 1.6 6.8L12 16.9 5.8 20.3l1.6-6.8L2.2 8.9l6.9-.6z" fill="#facc15" stroke="#ca8a04" stroke-width="1.2"/></svg>`;
+      const hotelMarker = new AMap.Marker({
+        position: [curDay.hotelLng, curDay.hotelLat],
+        content: starSvg,
+        anchor: "center",
+        zIndex: 150,
+      });
+      hotelMarker.on("click", () => {
+        const info = new AMap.InfoWindow({
+          content: `<div class="trip-info"><b>${curDay.hotel || "住宿"}</b></div>`,
+        });
+        info.open(map, [curDay.hotelLng as number, curDay.hotelLat as number]);
+      });
+      hotelMarkerRef.current = hotelMarker;
+      markers.push(hotelMarker);
+    }
+
     map.add(markers);
     // 固定缩放：不自动 fitView，只平移到当天第一个点
     if (markers.length) {

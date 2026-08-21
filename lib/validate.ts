@@ -56,6 +56,8 @@ export function validateTrip(input: unknown): ValidateResult {
       title: dayTitle,
       city: typeof raw.city === "string" ? raw.city : undefined,
       hotel: typeof raw.hotel === "string" ? raw.hotel : undefined,
+      hotelLat: isNum(raw.hotelLat) ? raw.hotelLat : undefined,
+      hotelLng: isNum(raw.hotelLng) ? raw.hotelLng : undefined,
       items,
     });
   }

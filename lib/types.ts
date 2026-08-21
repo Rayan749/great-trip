@@ -32,6 +32,9 @@ export interface TripDay {
   city?: string;
   /** 当天住宿 */
   hotel?: string;
+  /** 住宿经纬度（高德 GCJ-02），用于地图上黄色五角星独立标记 */
+  hotelLat?: number;
+  hotelLng?: number;
   items: TripItem[];
 }
 

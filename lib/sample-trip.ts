@@ -16,6 +16,8 @@ export const SAMPLE_TRIP: Trip = {
       title: "早机抵青 · 午后海岸慢逛",
       city: "青岛",
       hotel: "全季酒店·青岛五四广场海景店（香港中路28号，住2晚）",
+      hotelLat: 36.065221,
+      hotelLng: 120.388233,
       items: [
         { time: "07:30", title: "MU6431 合肥→青岛", desc: "东航直飞，青岛胶东机场地铁直达市区", place: "合肥新桥机场", transport: "出发（乘机）", transfer: "飞行 1h15m", distance: "约660公里", visit: "乘机（约1.5h含候机）", mode: "flight", lat: 31.99, lng: 116.978 },
         { time: "11:30", title: "午餐 · 双合园", desc: "本地老字号，鲅鱼/虾三鲜水饺、老青岛炸肉", place: "崂山区仙霞岭路48号", transport: "地铁/打车", transfer: "约40分钟", distance: "约50公里", visit: "1小时（用餐）", lat: 36.098, lng: 120.461 },
@@ -30,6 +32,8 @@ export const SAMPLE_TRIP: Trip = {
       title: "石老人日出 · 市区山海线（东向西）",
       city: "青岛",
       hotel: "全季酒店·青岛五四广场海景店（香港中路28号）",
+      hotelLat: 36.065221,
+      hotelLng: 120.388233,
       items: [
         { time: "05:30", title: "石老人海水浴场 · 日出", desc: "青岛看日出首选：海蚀柱+橘子海日出，人少；全程唯一一次日出", place: "市南区东海中路", transport: "打车", transfer: "约25分钟", distance: "约8公里", visit: "1.5小时（含日出+拍照）", lat: 36.095, lng: 120.492 },
         { time: "08:00", title: "早餐", desc: "酒店或附近小吃", place: "住宿附近", transport: "打车", transfer: "约15分钟", distance: "约5公里", visit: "40分钟" },
@@ -48,6 +52,8 @@ export const SAMPLE_TRIP: Trip = {
       title: "威海 · 刘公岛 + 蓝旗海滩",
       city: "威海",
       hotel: "全季酒店·威海山大海水浴场店（文化西路196号，住1晚）",
+      hotelLat: 37.525818,
+      hotelLng: 122.054027,
       items: [
         { time: "07:30", title: "青岛退房 → 青岛北站", desc: "行李随身，仅搬一次", place: "青岛北站", transport: "地铁3号线", transfer: "约40分钟", distance: "约8公里", visit: "候车30分钟", lat: 36.190, lng: 120.397 },
         { time: "07:54", title: "G5335 青岛北→威海", desc: "二等152元，1h41m", place: "青岛北站", transport: "高铁", transfer: "1h41m", distance: "约250公里", visit: "乘车", lat: 36.190, lng: 120.397 },
