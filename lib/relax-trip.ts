@@ -15,7 +15,7 @@ export const RELAX_TRIP: Trip = {
       date: "2026-09-04",
       title: "慢抵青 · 石老人躺海一下午",
       city: "青岛",
-      hotel: "五四广场/奥帆片区（住2晚）",
+      hotel: "全季酒店·青岛五四广场海景店（香港中路28号，住2晚）",
       items: [
         { time: "07:30", title: "MU6431 合肥→青岛", desc: "东航直飞，青岛胶东机场地铁直达市区", place: "合肥新桥机场", transport: "出发（乘机）", transfer: "飞行 1h15m", distance: "约660公里", visit: "乘机（约1.5h含候机）", mode: "flight", lat: 31.99, lng: 116.978 },
         { time: "11:30", title: "午餐 · 双合园", desc: "本地老字号，鲅鱼/虾三鲜水饺", place: "崂山区仙霞岭路48号", transport: "地铁/打车", transfer: "约40分钟", distance: "约50公里", visit: "1.5小时（慢吃）", lat: 36.098, lng: 120.461 },
@@ -29,7 +29,7 @@ export const RELAX_TRIP: Trip = {
       date: "2026-09-05",
       title: "石老人日出 · 八大关慢逛",
       city: "青岛",
-      hotel: "五四广场/奥帆片区",
+      hotel: "全季酒店·青岛五四广场海景店（香港中路28号）",
       items: [
         { time: "05:30", title: "石老人海水浴场 · 日出", desc: "早起看橘子海日出（唯一一次日出），看完回酒店补觉/早餐，上午自由休息", place: "市南区东海中路", transport: "打车", transfer: "约25分钟", distance: "约8公里", visit: "1小时（含日出+拍照）", lat: 36.095, lng: 120.492 },
         { time: "10:00", title: "八大关 → 第二海水浴场", desc: "梧桐大道+老洋房慢逛，尽头第二浴人少清净，坐海边喝杯咖啡", place: "市南区八大关", transport: "打车", transfer: "约15分钟", distance: "约5公里", visit: "2.5小时（含咖啡/拍照）", lat: 36.062, lng: 120.350 },
@@ -44,7 +44,7 @@ export const RELAX_TRIP: Trip = {
       date: "2026-09-06",
       title: "转场威海 · 一下午属于海",
       city: "威海",
-      hotel: "国际海水浴场周边（住1晚）",
+      hotel: "全季酒店·威海山大海水浴场店（文化西路196号，住1晚）",
       items: [
         { time: "09:00", title: "青岛退房 → 青岛北站", desc: "行李随身，慢慢来", place: "青岛北站", transport: "地铁3号线", transfer: "约40分钟", distance: "约8公里", visit: "候车30分钟", lat: 36.190, lng: 120.397 },
         { time: "10:00", title: "高铁 青岛北→威海", desc: "二等约100-150元，约1h40m", place: "青岛北站", transport: "高铁", transfer: "约1h40m", distance: "约250公里", visit: "乘车", lat: 36.190, lng: 120.397 },
