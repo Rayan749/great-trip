@@ -20,6 +20,7 @@ export const RELAX_TRIP: Trip = {
       hotelLng: 120.388233,
       items: [
         { time: "07:30", title: "MU6431 合肥→青岛", desc: "东航直飞，青岛胶东机场地铁直达市区", place: "合肥新桥机场", transport: "出发（乘机）", transfer: "飞行 1h15m", distance: "约660公里", visit: "乘机（约1.5h含候机）", mode: "flight", lat: 31.99, lng: 116.978 },
+        { time: "09:45", title: "到酒店放行李", desc: "全季酒店·青岛五四广场海景店（香港中路28号）寄存行李，轻装出发", place: "五四广场", transport: "地铁/打车", transfer: "约50分钟", distance: "约55公里", visit: "30分钟", lat: 36.065221, lng: 120.388233 },
         { time: "11:30", title: "午餐 · 双合园", desc: "本地老字号，鲅鱼/虾三鲜水饺", place: "崂山区仙霞岭路48号", transport: "地铁/打车", transfer: "约40分钟", distance: "约50公里", visit: "1.5小时（慢吃）", lat: 36.098, lng: 120.461 },
         { time: "13:30", title: "石老人海水浴场（慢玩）", desc: "一下午就给它：沙滩躺平+3km木栈道散步+退潮海蚀洞，青岛最清净的大沙滩", place: "市南区东海中路", transport: "打车", transfer: "约15分钟", distance: "约6公里", visit: "3小时（含玩水/拍照/发呆）", lat: 36.095, lng: 120.492 },
         { time: "17:30", title: "第三海水浴场 · 灯光秀", desc: "傍晚玩水，晚间看五四广场灯光秀", place: "市南区第三海水浴场", transport: "打车", transfer: "约20分钟", distance: "约9公里", visit: "2小时（含晚间灯光秀）", lat: 36.059, lng: 120.371 },
@@ -54,6 +55,7 @@ export const RELAX_TRIP: Trip = {
       items: [
         { time: "09:00", title: "青岛退房 → 青岛北站", desc: "行李随身，慢慢来", place: "青岛北站", transport: "地铁3号线", transfer: "约40分钟", distance: "约8公里", visit: "候车30分钟", lat: 36.190, lng: 120.397 },
         { time: "10:00", title: "高铁 青岛北→威海", desc: "二等约100-150元，约1h40m", place: "青岛北站", transport: "高铁", transfer: "约1h40m", distance: "约250公里", visit: "乘车", lat: 36.190, lng: 120.397 },
+        { time: "12:00", title: "到酒店放行李", desc: "全季酒店·威海山大海水浴场店（文化西路196号）寄存行李", place: "威海国际海水浴场", transport: "打车", transfer: "约25分钟", distance: "约9公里", visit: "30分钟", lat: 37.525818, lng: 122.054027 },
         { time: "12:30", title: "午餐 · 韩乐坊", desc: "韩式烤肉/部队锅，人均50", place: "威海韩乐坊", transport: "打车", transfer: "约20分钟", distance: "约7公里", visit: "1.5小时（慢吃）", lat: 37.474, lng: 122.141 },
         { time: "14:00", title: "刘公岛（慢游半日）", desc: "乘船约20分钟上岛；甲午战争博物馆、岛内观光车，海景+历史，不赶时间", place: "威海刘公岛", transport: "轮渡", transfer: "船程约20分钟", distance: "约3公里（船）", visit: "2.5小时（含博物馆/拍照）", lat: 37.499, lng: 122.183 },
         { time: "17:00", title: "国际海水浴场（傍晚）", desc: "蓝旗认证、免费、沙细水清；傍晚玩水/躺平", place: "威海国际海水浴场", transport: "打车", transfer: "约15分钟", distance: "约6公里", visit: "1.5小时（含玩水）", lat: 37.524, lng: 122.014 },

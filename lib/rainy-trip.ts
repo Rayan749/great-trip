@@ -20,6 +20,7 @@ export const RAINY_TRIP: Trip = {
       hotelLng: 120.388233,
       items: [
         { time: "07:30", title: "MU6431 合肥→青岛", desc: "东航直飞，青岛胶东机场地铁直达市区", place: "合肥新桥机场", transport: "出发（乘机）", transfer: "飞行 1h15m", distance: "约660公里", visit: "乘机（约1.5h含候机）", mode: "flight", lat: 31.99, lng: 116.978 },
+        { time: "09:45", title: "到酒店放行李", desc: "全季酒店·青岛五四广场海景店（香港中路28号）寄存行李，轻装出发", place: "五四广场", transport: "地铁/打车", transfer: "约50分钟", distance: "约55公里", visit: "30分钟", lat: 36.065221, lng: 120.388233 },
         { time: "11:30", title: "午餐 · 双合园", desc: "本地老字号，鲅鱼/虾三鲜水饺", place: "崂山区仙霞岭路48号", transport: "地铁/打车", transfer: "约40分钟", distance: "约50公里", visit: "1小时（用餐）", lat: 36.098, lng: 120.461 },
         { time: "13:30", title: "青岛啤酒博物馆", desc: "室内；B馆45元含两杯啤酒，了解百年青啤历史，雨天避雨首选", place: "市北区登州路56号", transport: "打车", transfer: "约20分钟", distance: "约8公里", visit: "2小时（含品酒）", lat: 36.079, lng: 120.359 },
         { time: "15:30", title: "大鲍岛文化街区", desc: "骑楼+红砖老建筑，部分有顶棚，雨天漫步咖啡馆", place: "市北区大鲍岛", transport: "打车", transfer: "约15分钟", distance: "约4公里", visit: "1.5小时（含咖啡）", lat: 36.080, lng: 120.332 },
@@ -54,6 +55,7 @@ export const RAINY_TRIP: Trip = {
       items: [
         { time: "07:30", title: "青岛退房 → 青岛北站", desc: "行李随身", place: "青岛北站", transport: "地铁3号线", transfer: "约40分钟", distance: "约8公里", visit: "候车30分钟", lat: 36.190, lng: 120.397 },
         { time: "07:54", title: "G5335 青岛北→威海", desc: "二等152元，1h41m", place: "青岛北站", transport: "高铁", transfer: "1h41m", distance: "约250公里", visit: "乘车", lat: 36.190, lng: 120.397 },
+        { time: "10:00", title: "到酒店放行李", desc: "全季酒店·威海山大海水浴场店（文化西路196号）寄存行李", place: "威海国际海水浴场", transport: "打车", transfer: "约25分钟", distance: "约9公里", visit: "30分钟", lat: 37.525818, lng: 122.054027 },
         { time: "10:30", title: "威海市博物馆", desc: "免费，室内，了解威海海防与城市史", place: "威海环翠区", transport: "打车", transfer: "约20分钟", distance: "约7公里", visit: "1.5小时", lat: 37.490, lng: 122.120 },
         { time: "12:30", title: "午餐 · 韩乐坊", desc: "韩式料理/烤肉，室内", place: "威海韩乐坊", transport: "打车", transfer: "约15分钟", distance: "约5公里", visit: "1小时（用餐）", lat: 37.474, lng: 122.141 },
         { time: "14:00", title: "刘公岛（雨天·室内博物馆为主）", desc: "乘船约20分钟上岛，甲午战争博物馆等室内为主；雨天轮渡可能停航，出行前确认，停航则改威高海洋公园", place: "威海刘公岛", transport: "轮渡", transfer: "船程约20分钟", distance: "约3公里（船）", visit: "2.5小时", lat: 37.499, lng: 122.183 },
